@@ -2,14 +2,38 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     max-width: 1200px;
     margin: auto;
+}
+
+header {
+    background-color: lightgreen;
+    padding: 0px 5px 5px 5px;
+}
+
+nav {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+article {
+    padding: 0px 10px;
+    border: 1px dashed black;
     margin-top: 10px;
+}
+figure {
+    
+}
+
+aside {
+    background-color: beige;
+}
+
+footer {
+    background-color: greenyellow;
 }
 
 #nice-box {
     padding: 0px 20px 20px 20px;
     background-color: lightblue;
-    border: 3px deepskyblue;
-    border-style: dotted;
+    border: 3px dotted deepskyblue;
 }
 
 #rules-box {
@@ -31,5 +55,4 @@ body {
 
 #ball-image-div {
     float: right;
-    padding-left: 20px;
 }

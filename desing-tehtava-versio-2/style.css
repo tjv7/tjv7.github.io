@@ -1,0 +1,344 @@
+
+
+
+ /*----------------------------*/
+ /*                            */
+ /*  EDIT THIS FILE TO APPLY   */
+ /*  YOUR DESIRED STYLE!       */
+ /*                            */
+ /*----------------------------*/
+
+
+
+/*--------- BACKGROUND ---------------------*/
+
+html { 
+	/*koko sivun tausta on valkoinen.
+	Muuta haluamaksesi*/
+	
+	background: #A26953;
+
+	/*Jos määrität html-tagissa fontteja, 
+	taustavärejä tai tekstin värejä,
+	samat määritykset tulevat kaikkiin sisällä oleviin
+	elementteihin. Näin voit määrittää esim. koko sivun 
+	fontit, värit ym. ja sitten muuttaa haluamissasi
+	elementeissä tyylin toiseksi.*/
+
+	font-family: 'Josefin Sans', sans-serif;
+	color: RGB(80, 49, 47);
+
+
+}
+
+body { 
+	
+	/*Kaiken sisällön ympärillä on body. 
+	Voit muuttaa myös bodyn taustaväriä tai
+	esim. lisätä paddingin, jotta elementit eivät 
+	olisi reunassa kiinni.*/
+	
+	/*Tällä koodilla voit tehdä niin, että yli 900px
+	leveässä näytössä body-tagi jää vain 900px leveäksi,
+	ja reunoille jää tyhjää. Voit muuttaa tätä miten haluat.*/
+	max-width: 1040px;
+	min-width: 320px;
+	margin: auto; /*tämä keskittää body-tagin sivusuunnassa*/
+
+	background-color: white;
+	padding: 40px;
+	border-radius: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+
+/*--------- HEADER ---------------------*/
+
+
+header {
+
+	background-color: RGB(80, 49, 47);
+	color: RGB(219, 204, 181);
+	border-radius: 10px;
+	padding: 20px;
+
+}
+
+/*Header text on top of the menu*/
+header h1 { 
+	/*Pääotsikko*/
+
+	/*Täällä kannattaa muokata background-, color- 
+	font-size- ja font-family-arvoja.*/
+
+	/*Laita myös ja marginaalit paddingit paremmin, 
+	niin näyttää tyylikkäämmältä */
+
+	/*Voit halutessasi myös esim. keskittää otsikon (text-align: center;)*/
+
+	font-family: 'Libre Baskerville', serif;
+	font-size: 50px;
+	text-align: center;
+	text-decoration: underline 3px;
+	text-underline-offset: 10px;
+	padding: 20px;
+	margin: 0;
+}
+
+/*--------- MAIN MENU ---------------------*/
+
+/*Menu*/
+#main-menu { 
+	list-style-type: none; 
+	
+	/*Voit tehdä tästä flexboxin, 
+	niin valikon napit menevät vierekkäin*/
+
+	/*Laita tässä ja marginaalit paddingit paremmin, 
+	niin näyttää tyylikkäämmältä */
+	
+	/*Voi muokata täällä myös background-, color-arvoja.*/
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 10px;
+	margin: 0;
+	font-size: 20px;
+		
+}
+
+/*Menu item*/
+#main-menu li {
+	/*Laita tässä ja marginaalit paddingit paremmin, 
+	niin näyttää tyylikkäämmältä */
+
+	/*Voi muokata täällä myös background-, color-arvoja.*/
+
+	padding: 10px;
+
+}
+
+/*Link in menu item*/
+#main-menu a { 
+
+	text-decoration: none; /*poistaa linkin alleviivauksen*/
+
+	padding: 10px;
+	color: RGB(219, 204, 181);
+	border-radius: 5px;
+
+	/*Voi muokata täällä myös background-, color- 
+	font-size- ja font-family-arvoja.*/
+
+}
+
+/*Menu item when mouse over*/
+#main-menu a:hover { 
+	
+	/*Tässä määritellään, miltä valikon linkki näyttää, 
+	kun kursori on sen päällä. Muuta paremmaksi */
+	color: black; 
+	background: #EAC65E; 
+}
+
+/*------- ARTICLE BUTTONS -------------------*/
+/*Button in end of each article*/
+.button { 
+	/*saatat haluta tehdä napista aika samanlaisen
+	kuin valikkolinkit, mutta toisenlainenkin 
+	voi olla ihan tyylikäs*/
+
+	/*Voi muokata täällä myös background-, color- 
+	font-size- ja font-family-arvoja.*/
+	
+	/*Tämä on a-elementti, ja se on oletuksena 
+		display: inline; 
+	Siksi sen kokoa tai paikkaa ym. ei voi muuttaa.
+	Jotta nappia on helpompi käsitellä, voi muuttaa sen 
+		display: block;
+		
+	Ymmärtääksesi paremmin mitä on block ja inline ym., 
+	katso tämä video: https://www.youtube.com/watch?v=9T8uxp5hQ60	
+	*/
+
+	/*Tällä koodilla saat fancyn varjon :) 
+		box-shadow: 0px 2px 10px rgba(0,0,0,50%); 
+	*/
+
+	display: inline-block;
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+
+	padding: 5px;
+	/* border: 2px solid #EAC65E; */
+	border-radius: 5px;
+
+	
+
+	box-shadow: 0px 2px 10px rgba(0,0,0,10%);
+	
+	
+
+}
+
+/*Button when mouse over*/
+.button:hover { 
+	/*Tässä määritellään, nappi näyttää, 
+	kun kursori on sen päällä. Muuta paremmaksi */
+
+	background: white;
+	background-color: RGB(80, 49, 47);
+	color: RGB(219, 204, 181);
+	
+	/*Voit halutessasi laittaa vaikka koko 
+	artikkelin muuttumaan jotenkin hiukan, 
+	kun sen päällä on kursori.. :) */
+}
+
+
+/*--------- ARTICLES ---------------------*/
+
+/*Artikkeleiden ympärillä*/
+main {
+	/*Kaikki "artikkelit" ovat main-tagin sisällä.
+	Jos pidät tämän flexboxina, artikkelit menevät
+	vierekkäin leveässä näytössä. 
+	ja sitten artikkeleihin (ks. alla) esim. ,
+	jolloin artikkelit asettuvat vierekkäin.*/
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 40px;
+	margin: 60px 0;
+	
+}
+
+/*Frame of each "article"*/
+article {
+	max-width: 320px; /*Jos main on flexbox, 
+	tämä tekee sen, että "artikkelit" mahtuvat vierekkäin.*/
+	
+	/*Yksittäisen artikkelin tausta:
+	Saatat haluta  muokata täällä background-, color- 
+	sekä font-size- ja font-family-arvoja.*/
+
+	/*Tärkeää: Laita tässä marginaalit ja paddingit paremmin, 
+	niin näyttää tyylikkäämmältä! Teksti, kuva ym. ei saa olla 
+	reunaan asti, vaan reunassa pitää olla marginaali (teknisesti
+	margin tai padding).*/
+
+
+	margin: 0;
+	padding: 20px 20px 40px 20px;
+	background-color: RGB(219, 204, 181);
+	border-radius: 5px;
+
+	box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 6px 6px 20px 0 rgba(0, 0, 0, 0.2);
+
+	box-sizing: border-box;
+
+	position: relative;
+
+}
+
+
+
+/*article title*/
+article h2 { 
+
+	/*Yksittäisen artikkelin otsikko*/
+
+	/*Kannattaa muokata täällä background-, color- 
+	font-size- ja font-family-arvoja.*/
+
+	/*Saatat haluta muokata täällä myös 
+	background-, color-, margin- ja padding-
+	font-size- ja font-family-arvoja.*/
+
+	font-family: 'Libre Baskerville', serif;
+	font-size: 22px;
+
+	margin: 0;
+	margin-bottom: 20px;
+	text-align: center;
+
+}
+
+/*article text*/
+article p { 
+	/*Artikkelin pienempi teksti*/
+
+	/*Saatat haluta muokata täällä 
+	background-, color-, margin- ja padding-
+	font-size- ja font-family-arvoja.*/
+
+	margin: 20px 0;
+	font-size: 18px;
+
+}
+
+/* "Images" */
+.article-image { 
+    max-width: 100%; /*Tämä tekee sen, että kuva ei mene yli reunasta.*/
+
+	/*Kuva voi olla koko artikkelin levyinen tai pienempi. 
+	Esim. alla olevalla kuvasta tulisi pienempi (=50%)
+	ja teksti kiertää kuvaa (=float):
+		width: 50%;
+		min-width: 150px;
+		float: left; 
+	*/
+}
+
+article:hover {
+	/* border: 1px solid black; */
+	/* -webkit-box-shadow:inset 0px 0px 0px 10px #A26953; */
+    /* -moz-box-shadow:inset 0px 0px 0px 10px #A26953; */
+    box-shadow:inset 0px 0px 2px 2px #A26953;
+}
+
+/*-------- FOOTER ---------------*/
+
+footer {
+	/*Kannattaa laittaa footeriin vähintään padding 
+	ja ehkä eri taustaväri, jotta se erottuu hiukan.*/
+	background-color: #A26953;
+	color: #EAC65E;
+
+	background-color: RGB(80, 49, 47);
+
+	/* background-color: #EAC65E; */
+	/* color: RGB(80, 49, 47); */
+
+	padding: 20px;
+	border-radius: 10px;
+}
+
+
+/*-------- SCREEN SIZE ---------------*/
+
+@media screen and (max-width: 1160px) {
+	body {
+		max-width: 680px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		max-width: 320px;
+	}
+
+	main {
+		margin: 40px 0;
+	}
+
+	header h1 {
+		font-size: 30px;
+		text-decoration: underline 2px;
+		text-underline-offset: 5px;
+	}
+}

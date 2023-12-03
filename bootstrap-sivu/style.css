@@ -1,8 +1,84 @@
-#testbox {
-    background-color: red;
+body {
+    /* padding: 20px; */
 }
 
-h2 {
+p {
+    font-size: 1.4em;
+}
+
+header {
+    margin-bottom: 10px;
+}
+
+#header-title {
+    font-family: 'Times New Roman', Times, serif;
+    color: green;
+    letter-spacing: 5px;
+}
+
+.hero {
+    background-color: azure;
+}
+
+.hero h1 {
+    color: pink;
+    text-shadow: 5px 5px #558ABB;
+}
+
+div.feature:nth-child(2) p {
+    background-color: #181818;
+    color: white;
+}
+
+#icon-grid h4 {
+    color: red;
+}
+
+#icon-grid p {
     color: blue;
-    background-color: pink;
+}
+
+#four-wide{
+    padding-top: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    
+}
+
+#four-wide h2 {
+    padding-bottom: 60px;
+}
+
+#four-wide div {
+    background-color: #181818;
+    color: white;
+    padding: 16px;
+    border-radius: 16px;
+    margin-top: 58px;
+}
+
+#custom-cards {
+    padding-top: 20px !important;
+}
+
+#custom-cards .card-title {
+    text-decoration: underline;
+}
+
+.three-wide {
+    padding: 20px 12px;
+}
+
+.rounded-5 {
+    border-radius: 16px !important;
+}
+
+footer {
+    font-style: italic;
+}
+
+.footer-container {
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
 }

@@ -1,0 +1,38 @@
+body {
+    padding: 0;
+}
+
+.header-container {
+    height: 100px;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #14213D;
+}
+
+header {
+    /* width: 100%; */
+
+    margin: 0 !important;
+
+    /* background-color: #14213D; */
+    /* color: white; */
+}
+
+header #header-title {
+    color: white;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+}
+
+footer {
+    margin-top: auto !important;
+}
